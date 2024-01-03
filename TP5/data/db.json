@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": 4000,
+      "checked": false
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "price": 9000,
+      "checked": true
+    },
+    {
+      "id": 4,
+      "name": "PlayStation 5",
+      "price": 7000,
+      "checked": false
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 5
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 6
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 7
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 8
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 9
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 10
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 11
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "price": 18000,
+      "checked": true,
+      "id": 12
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-body">
+        <input type="text" [(ngModel)]="keyword"/>
+        <button
+          class="btn btn-outline-success ms-1"
+          (click)="getProducts()"
+        ><i class="bi bi-search"></i></button>
+      </div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Checked</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td>
+            <button class="btn btn-outline-success"
+            (click)="handleCheckProduct(product)"
+            >
+              <i [class]="product.checked ? 'bi bi-check-circle-fill' : 'bi bi-circle'"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-outline-primary"
+                    (click)="handleEditProduct(product)"
+            >
+              <i class="bi bi-pencil-fill"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-outline-danger"
+            (click)="handleDeleteProduct(product)"
+            >
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <ul class="nav nav-pills">
+        <li *ngFor="let page of [].constructor(totalPage); let i = index"
+        >
+          <button
+            (click)="handleGoToPage(i+1)"
+            [ngClass]="currentPage == i + 1 ? 'btn-success' : 'btn-outline-success'"
+            class="btn m-1"
+          >
+            {{i + 1}}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
